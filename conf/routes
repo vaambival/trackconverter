@@ -1,0 +1,3 @@
+GET     /get-new-requests       converter.NewsController.fetch(query: String)
+
+      
