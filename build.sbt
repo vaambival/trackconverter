@@ -14,6 +14,9 @@ libraryDependencies ++= Seq( jdbc , ehcache , ws , specs2 % Test , guice )
 libraryDependencies ++= Seq("com.netaporter" %% "scala-uri" % "0.4.16", "net.logstash.logback" % "logstash-logback-encoder" % "5.2")
 libraryDependencies += ws
 libraryDependencies += ehcache
+libraryDependencies ++= Seq(
+  "com.heroku.sdk" % "heroku-deploy" % "2.0.6"
+)
 
 unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )
 
