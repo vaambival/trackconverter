@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/trackconverter -Dhttp.port=${PORT}
+web: target/universal/stage/bin/trackconverter -Dhttp.port=${PORT} -Dplay.http.secret.key='97005a5d-d7f5-42a6-ba5f-9d3117fa7ed0'
