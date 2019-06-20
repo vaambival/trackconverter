@@ -1,1 +1,1 @@
-web: target/universal/trackconverter -Dhttp.port=${PORT}
+web: target/universal/scripts/bin -Dhttp.port=${PORT}
