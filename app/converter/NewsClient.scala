@@ -7,7 +7,7 @@ import play.api.libs.ws.{WSClient, WSRequest, WSResponse}
 import scala.concurrent.{ExecutionContext, Future}
 
 class NewsClient @Inject()(ws: WSClient)(implicit ec: ExecutionContext) {
-  val url ="https://sonetmon.herokuapp.com/api/v1/news/search"
+  val url ="http://sonetmon.herokuapp.com/api/v1/news/search"
 
   def fetch(query: String)(implicit mc: MarkerContext): Future[WSResponse] = {
     val request: WSRequest = ws.url(url)
